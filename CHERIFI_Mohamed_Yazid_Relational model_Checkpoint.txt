@@ -1,0 +1,37 @@
+Relational model Checkpoint.
+============================================
+In this checkpoint, you're going to practice with a real life example.
+After the construction of his hotels in one of the tourist areas, a director wishes to prepare a database to facilitate the management of his data.
+The director has presented the following information to you through the entity relationship model.
+
+============================================
+============================================
+============================================
+
+hotels
+	id_hotel,
+	name_hotel,
+	type_id,
+
+types
+	id_type,
+	name_type,
+
+rooms
+	id_room,
+	floor,
+	hotel_id,
+	category_id,
+
+category
+	id_category,
+	name_category,
+	price,
+	bed_number,
+
+employes
+	id_employe,
+	name_employe,
+	specialite_employe,
+	hotel_id,
+	responsable_id, // contient le id de l'employé qui est responsable de cet employé, si un employé n'a pas de responsable, elle est mise à NULL
